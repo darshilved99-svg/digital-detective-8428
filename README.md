@@ -63,4 +63,4 @@ The missions cover computer input, processing, output and storage; hardware and 
 The activities show how files, programs and devices work together: the operating system manages resources, Python can automate a conversion, Git records changes, and network protocols carry requests and responses between computers. Each mission is documented and committed separately so its work can be reviewed in sequence.
 
 ## Completion status
-Missions 0–4 were previously completed and committed. Missions 5–8 are being completed and reviewed against the supplied assignment; this status will be updated in the final report.
+Missions 0–8 are documented and committed. Mission 6's `update-about` branch and Pull Request #1 are visible on GitHub; GitHub merged PR #1 remotely, and the merge was fetched and integrated without force-pushing. Mission 7's concepts, DNS lookup and successful connectivity check are documented. The instructor's submission form was not provided, so the repository URL has not been submitted.
