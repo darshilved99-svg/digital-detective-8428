@@ -7,7 +7,8 @@ Explain the Git workflow, create the `update-about` branch, add a learning updat
 - Inspected repository status and recent commit history.
 - Created `update-about` from the pushed `main` branch.
 - Added a short `My Learning` section to the root README.
-- The branch push and Pull Request are completed after the documentation commit; current PR status is recorded below.
+- Published `update-about` to `origin` and opened Pull Request [#1](https://github.com/darshilved99-svg/digital-detective-8428/pull/1) into `main`.
+- PR #1 is open and intentionally unmerged, following the assignment's instruction to merge only when the instructor asks.
 
 ### Git workflow
 
@@ -43,7 +44,7 @@ Used the existing `main` branch and `origin` remote, retained the existing histo
 ## 7. Evidence / files
 - Root `README.md` — contains the `My Learning` section on `update-about`.
 - This README — workflow glossary, branch and Pull Request notes.
-- GitHub Pull Request: added after creation with its URL and status.
+- [Pull Request #1](https://github.com/darshilved99-svg/digital-detective-8428/pull/1) — open, not merged.
 
 ## 8. Commit details
-Commit message: `Complete Git and GitHub collaboration mission`. Branch push and Pull Request status are filled in after GitHub confirms them.
+Commit message: `Complete Git and GitHub collaboration mission`. Confirmed that `update-about` was pushed to `origin` and PR #1 is open and not merged. This status update is recorded in `Record Mission 6 Pull Request status`.
