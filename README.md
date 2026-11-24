@@ -54,6 +54,11 @@ Enter a positive whole number to see its binary and hexadecimal forms.
 ## Topics explored
 The missions cover computer input, processing, output and storage; hardware and software; safe Terminal operations; processes, paths and permissions; program execution; binary, decimal and hexadecimal notation; ASCII and UTF-8; version control, branches and Pull Requests; DNS, routers, protocols and client-server communication.
 
+## My Learning
+- The operating system manages processes, memory, files and permissions so applications can share the computer safely.
+- `git add` selects changes for the next snapshot, while `git commit` records that selected snapshot in the repository history.
+- DNS finds the network address for a domain name, allowing a browser to contact the correct server.
+
 ## Learning summary
 The activities show how files, programs and devices work together: the operating system manages resources, Python can automate a conversion, Git records changes, and network protocols carry requests and responses between computers. Each mission is documented and committed separately so its work can be reviewed in sequence.
 
