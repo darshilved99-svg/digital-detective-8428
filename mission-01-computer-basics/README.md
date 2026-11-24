@@ -1,63 +1,62 @@
-# Mission 01 – Computer Basics
+# Mission 1 — Know your computer
 
-## Objective
-To understand computer fundamentals, including the IPOS cycle, hardware, software, and internal computer components.
+## 1. Task / objective
+Explain the IPOS cycle, classify hardware and software, and give examples of computer-based systems.
 
-## 1. IPOS Cycle
+## 2. Work completed
 
-IPOS stands for:
-- Input: Data entered into a computer.
-- Processing: The CPU processes the input.
-- Output: The computer displays the result.
-- Storage: Data is saved for future use.
+### IPOS example: searching for information online
 
-Example: Searching on Google involves entering a query, processing the request, displaying results, and potentially saving browsing history.
+| Stage | What happens | Hardware / component |
+|---|---|---|
+| Input | I enter a search query and submit it. | Keyboard or trackpad |
+| Processing | The browser and remote search service interpret the query and find matches. | CPU, memory and network hardware |
+| Output | Search results appear in the browser. | Display |
+| Storage | Browser files or saved history may be written to storage, depending on settings. | SSD |
 
-## 2. Hardware vs Software
+The query moves from the keyboard to the computer for processing, travels over the network to the search service, and the returned results are displayed. Storage is used only when data such as browser history or cached files is saved.
 
-**Hardware:** Physical components of a computer.
-Examples: CPU, RAM, SSD, motherboard, keyboard and monitor.
+### Hardware and software I use
 
-**Software:** Programs and instructions that operate on hardware.
-Examples: macOS, Python, Google Chrome and Visual Studio Code.
+| Item | Classification | Software type | Purpose |
+|---|---|---|---|
+| CPU | Hardware | — | Executes instructions |
+| RAM | Hardware | — | Holds data currently in use |
+| SSD | Hardware | — | Keeps files and applications when power is off |
+| Keyboard | Hardware | — | Enters text and commands |
+| macOS | Software | Operating system | Manages hardware and runs applications |
+| Python 3 | Software | Application / language runtime | Runs Python programs |
+| Visual Studio Code | Software | Application | Edits project files and code |
+| Homebrew | Software | Utility | Manages supported command-line packages |
 
-The operating system helps software communicate with hardware.
+### Other computer systems
 
-## 3. Important Computer Components
+| System | Main purpose | Input | Output |
+|---|---|---|---|
+| ATM | Provides banking services | Card and keypad selection | Cash or account information |
+| Smart TV | Plays broadcast or streamed media | Remote control | Picture and sound |
+| Ticket kiosk | Sells or prints tickets | Destination and payment selection | Printed or digital ticket |
 
-- CPU: Executes instructions and performs calculations.
-- RAM: Temporarily stores active data.
-- SSD: Stores files and applications permanently.
-- Motherboard: Connects computer components.
-- GPU: Handles graphics processing.
+### System explored
+The earlier computer exploration recorded a MacBook Pro with an Apple M5 processor and 16 GB RAM. The current Terminal checks confirmed macOS 27.2.1; hardware details above are kept at the level already recorded in this project.
 
-## 4. Practical Activity – My MacBook Pro
+## 3. Commands / tools used
+- `sw_vers` — displays the macOS version.
+- `sysctl -n machdep.cpu.brand_string` and `system_profiler SPHardwareDataType` — inspect processor and hardware details.
+- `df -h /` — displays filesystem usage and available storage.
+- Terminal and system settings — tools for observing the computer.
 
-I explored my Mac using macOS Terminal.
+## 4. My understanding
+IPOS describes a useful path for information through a computer. Hardware is the physical equipment; software is the instructions that make it useful. A computer-based system combines inputs, processing and outputs to perform a focused task.
 
-| Component | My System |
-|---|---|
-| Model | MacBook Pro |
-| Operating System | macOS 27.2.1 |
-| Processor | Apple M5 |
-| RAM | 16 GB |
-| Filesystem Size | 926 GiB |
-| Available Storage | 784 GiB |
+## 5. Difficulties faced
+No major difficulties.
 
-### Commands Used
+## 6. How I resolved them
+Not applicable.
 
-- `sw_vers` – Checks macOS version.
-- `sysctl -n machdep.cpu.brand_string` – Checks processor information.
-- `system_profiler SPHardwareDataType` – Displays hardware information.
-- `df -h /` – Checks filesystem storage.
+## 7. Evidence / files
+- This README contains the IPOS, hardware/software and everyday-system tables.
 
-## 5. What I Learned
-
-- How the IPOS cycle works.
-- The difference between hardware and software.
-- The functions of CPU, RAM, SSD, motherboard and GPU.
-- How to inspect my computer's specifications using Terminal.
-
-## Conclusion
-
-I learned the basic working principles of computers and explored the hardware and operating system of my own MacBook Pro.
+## 8. Commit details
+Original mission commit: `Complete Mission 1 computer basics`. The tables and README format correction is recorded as `Complete IPOS and computer-system examples`.
