@@ -1,66 +1,53 @@
-# Mission 02 – Terminal Commands
+# Mission 2 — Become comfortable with the Terminal
 
-## Objective
-To understand macOS Terminal commands and learn how to navigate, create, read, copy, rename and move files.
+## 1. Task / objective
+Use Terminal to inspect folders, safely create and manage practice files, explain command options and pipes, and describe package managers.
 
-## 1. Navigation Commands
+## 2. Work completed
 
-| Command | Purpose |
-|---|---|
-| `pwd` | Displays current directory |
-| `ls` | Lists files and folders |
-| `cd folder-name` | Enters a folder |
-| `cd ..` | Moves to parent directory |
+### Command reference
 
-## 2. File and Folder Management
+| Operation | Command | What it does / observation |
+|---|---|---|
+| Show current directory | `pwd` | Prints the full path of the working folder. |
+| List files | `ls` | Shows visible files and directories. |
+| Detailed listing | `ls -l` | Adds permissions, owner, size and modification time. |
+| Change directory | `cd ..` / `cd folder` | Moves to a parent or named subfolder; `pwd` shows the changed location. |
+| Create directory | `mkdir name` | Makes a new folder. |
+| Create empty file | `touch file.txt` | Creates an empty file if it does not already exist. |
+| Copy file | `cp source copy` | Creates a second file while keeping the source. |
+| Move / rename | `mv source destination` | Moves a file or gives it a new name. |
+| Display contents | `cat file.txt` | Prints the text in a file. |
 
-| Command | Purpose |
-|---|---|
-| `mkdir` | Creates a directory |
-| `touch` | Creates an empty file |
-| `cat` | Displays file contents |
-| `cp` | Copies files |
-| `mv` | Moves or renames files |
-| `echo` | Writes text to a file |
+### Safe file practice
+The `terminal-practice/notes.txt` file contains two lines. The first line was kept when the second was added. `terminal-practice/archive/old-notes.txt` is the renamed backup copy.
 
-## 3. Flags and Pipes
+- Replacing a file writes new contents over the old contents; appending adds text after the existing contents.
+- Copying leaves the original in place. Moving changes the original file's location or name.
+- `pwd` tells me which directory relative commands will use. A listing helps me check what is present before acting.
 
-- `ls -l`: Displays detailed file information.
-- `ls -lh`: Displays file sizes in human-readable format.
-- `ls -la`: Displays hidden files and detailed information.
-- `ls -l | head -n 3`: Displays the first three lines of command output.
+### Flags and pipes
+`ls -la` includes hidden entries and detailed metadata; `-h` uses human-readable sizes, for example `ls -lah`. The pipe in `ls -l | head -n 3` sends the listing from the command on the left to `head`, which displays the first three lines.
 
-## 4. Practical Activity
+### Package managers
+Homebrew 7.0.9 was already installed. `brew --version` checked its version and `brew list` displayed managed packages. A package manager provides a consistent way to install, update and remove software and can track package dependencies. No software was installed or uninstalled for this activity.
 
-Created a folder named `terminal-practice`.
+## 3. Commands / tools used
+`pwd`, `ls`, `cd`, `mkdir`, `touch`, `cp`, `mv`, `cat`, `echo`, `ls -la`, `ls -lah`, `head`, the pipe (`|`), `brew --version` and `brew list`.
 
-Inside it:
-- Created `notes.txt`.
-- Added text using `echo`.
-- Read the file using `cat`.
-- Copied the file using `cp`.
-- Renamed the copy using `mv`.
-- Created an `archive` folder.
-- Moved the renamed file into `archive`.
+## 4. My understanding
+The current directory determines the context for relative paths. Listing before file operations helps avoid acting on the wrong item. Flags adjust a command and a pipe passes one command's output to another.
 
-## 5. Homebrew Exploration
+## 5. Difficulties faced
+The first file listing showed that `notes.txt` had only one line, so the required second-line practice had not yet been saved.
 
-Checked Homebrew using:
-- `brew --version`
-- `brew list`
+## 6. How I resolved them
+Appended a second line to `terminal-practice/notes.txt`, then displayed it and used `wc -l` to confirm that both lines are present.
 
-Homebrew was installed successfully.
+## 7. Evidence / files
+- `terminal-practice/notes.txt` — two-line text practice.
+- `terminal-practice/archive/old-notes.txt` — renamed backup copy.
+- This README contains the command table and explanations.
 
-Some installed packages included Git, FFmpeg, Ruby, OpenSSL, Cowsay and Lolcat.
-
-## 6. What I Learned
-
-- Navigating directories using Terminal.
-- Creating and managing files and folders.
-- Understanding command flags.
-- Using pipes to combine commands.
-- Exploring installed packages using Homebrew.
-
-## Conclusion
-
-I learned how to use macOS Terminal to manage files and directories and explored Homebrew as a package manager.
+## 8. Commit details
+Original mission commit: `Complete Mission 2 terminal commands`. This README and safe file-practice update is recorded as `Document Terminal file-management practice`.
