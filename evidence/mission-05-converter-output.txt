@@ -1,0 +1,21 @@
+Command: python3 mission-05-numbers-data/number_converter.py
+Input: 13
+Output:
+Binary: 1101
+Hexadecimal: D
+
+Command: python3 mission-05-numbers-data/number_converter.py
+Input: 25
+Output:
+Binary: 11001
+Hexadecimal: 19
+
+Command: python3 mission-05-numbers-data/number_converter.py
+Input: 42
+Output:
+Binary: 101010
+Hexadecimal: 2A
+
+Invalid-input checks:
+- Text input displayed: Please enter a whole number.
+- Zero displayed: Please enter a number greater than zero.
