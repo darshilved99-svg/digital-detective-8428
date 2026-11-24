@@ -1,74 +1,40 @@
+# Mission 4 — How programs run
 
-# Mission 4 – Programs and Programming
+## 1. Task / objective
+Run a simple Python program and compare compilers and interpreters.
 
-## 1. What is a Program?
-A program is a set of instructions that tells a computer how to perform a task.
+## 2. Work completed
+- Added `hello.py`, which prints `Hello from Python`.
+- Kept the existing programming concepts and practice notes.
+- Compared when translation happens, typical output, examples and advantages.
 
-## 2. Programming Languages
-- Machine Language
-- Assembly Language
-- High-Level Languages
-- Python is a high-level programming language.
+| Point | Compiler | Interpreter |
+|---|---|---|
+| When translation / execution happens | Translates a program before running it. | Reads and executes instructions at runtime. |
+| Typical output | Often produces a separate executable or object code. | Often runs source directly or through an intermediate runtime. |
+| One example | C compiler such as `clang`. | Python's interpreter. |
+| One advantage | The compiled program can run quickly without translating every instruction each time. | It is convenient to run and debug code interactively. |
 
-## 3. Compiler vs Interpreter
-- Compiler translates code before execution.
-- Interpreter executes code by interpreting instructions at runtime.
+A compiler translates a program before that program runs, commonly producing another form of code. An interpreter carries out instructions at runtime. The distinction is useful for understanding how programs are launched, although real language implementations can combine compilation and interpretation. Python's standard runtime compiles source to bytecode and executes it in a virtual machine.
 
-## 4. Package Managers
-A package manager helps install, update and remove software.
-Example: Homebrew.
+## 3. Commands / tools used
+- `python3 mission-04-programs/hello.py` — runs the Python file.
+- Python `print()` — displays a line of text.
+- VS Code — creates and edits source files.
 
-## 5. Python File Extensions
-Python source files use `.py`.
+## 4. My understanding
+Source code is a set of instructions. Python runs the file and `print()` sends its message to the terminal. Compiler and interpreter describe different stages of translation and execution; implementations can use both techniques.
 
-## 6. Variables and Input
-Variables store values.
-`input()` accepts user input.
-`float()` and `int()` convert input into numbers.
+## 5. Difficulties faced
+The earlier Mission 4 commit contained practice examples but did not include the assignment's required `mission-04-programs/hello.py` file or comparison table.
 
-## 7. Conditional Statements
-- `if`
-- `if-else`
-- `if-elif-else`
-- Nested if statements
+## 6. How I resolved them
+Added the required one-line program and documented the comparison in this mission README.
 
-## 8. Loops
-- `for` loop
-- `while` loop
+## 7. Evidence / files
+- `hello.py` — required program.
+- `practice/` — existing practice examples retained in Git history; their current working-tree deletion state was not changed.
+- This README — execution notes and compiler/interpreter comparison.
 
-Loops repeat instructions while their conditions or ranges allow.
-
-## 9. Functions
-Functions are reusable blocks of code.
-- `def` defines a function.
-- Parameters receive values.
-- `return` sends a result back.
-
-## 10. Logical Operators
-- `and`
-- `or`
-- `not`
-
-## 11. Recursion
-Recursion occurs when a function calls itself.
-
-## 12. Practical Programs
-Created and tested:
-- hello.py
-- calculator.py
-- user_calculator.py
-- result_checker.py
-- grade_checker.py
-- for_loop.py
-- while_loop.py
-- functions.py
-- area_calculator.py
-- eligibility_checker.py
-- logical_operators.py
-- recursion.py
-- nested_if.py
-
-## 13. Revision Quiz
-Score: 5/5
-
-Mission 4 completed successfully.
+## 8. Commit details
+Original mission commit: `Complete Mission 4 programming concepts and practice`. The required `hello.py` and comparison are recorded as `Complete Mission 4 hello program and comparison`.

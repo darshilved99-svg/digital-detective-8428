@@ -1,0 +1,3 @@
+Command: python3 mission-04-programs/hello.py
+Output:
+Hello from Python
